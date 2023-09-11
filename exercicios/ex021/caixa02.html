@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tag</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkcyan;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+        }
+
+        nav{
+            background-color: rgb(126, 120, 120);
+            padding: 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 25px;
+            border-radius: 10px ;
+            box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.411);
+        }
+
+        article{
+            background-color: gray;
+            padding: 8px;
+        }
+
+        article > aside {
+            background-color: rgb(181, 177, 177);
+        }
+
+        footer{
+            background-color: black;
+            color: white;    
+            text-align: center;
+            padding: 5px;
+            margin: 25px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+        
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(63, 156, 238);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+    </header>
+    <main>
+    <section id="assuntos">
+
+    </section>
+    <section id="noticias">
+        <article>
+            <h2>
+                
+                noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nostrum, a quibusdam asperiores odit voluptas nemo adipisci nam deleniti magni ipsam sit minima nulla assumenda possimus distinctio debitis eum iusto?</p>
+                <aside>
+                    <p>Artigo escitro por Junior Andrade</p>
+                </aside>    
+        </article>
+              
+    </section>
+    </main>
+    <footer>
+        <aside>
+            <p>Desenvolvido por Joseildo Andrade</p>
+        </aside>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
