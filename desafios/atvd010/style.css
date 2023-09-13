@@ -35,7 +35,7 @@ header{
     background-color:var(--cor5);
     background-image: linear-gradient( to top, var(--cor5), var(--cor3) );
     text-align: center;
-
+    padding-bottom: 40px;
 }
 
 header > h1{
@@ -46,23 +46,25 @@ header > h1{
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
     font-size: 3em;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 header > p{
     font-family: var(--fonte-padrao);
     text-decoration: none;
     color: white;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     font-size: 1.3em;
     font-weight: normal;
+    padding-top: 20px;
 }
 
 nav{
     background-color: var(--cor5);
     padding-bottom: 10px;
     padding-top: 10px;
+    
 }
 
 nav > a{
@@ -72,12 +74,28 @@ nav > a{
     margin: 10px;
     text-decoration: none;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover{
     background-color: var(--cor3);
-    padding: 5px;
-    transition-duration: 0.5s;
+    padding: 8px 5px;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 main{
@@ -92,6 +110,12 @@ main img{
     width: 100%;
 }
 
+main img.bugdroid{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
 main > p{
     font-family: var(--fonte-padrao);
     text-indent: 30px;
@@ -100,51 +124,56 @@ main > p{
     line-height: 1.7em;
 }
 
-h2{
-    background-color: ;
+main h1{
+    font-size: 2em;
     font-family: var(--fonte-android);
-    color:;
+    color:var(--cor5);
+    font-weight: normal;
 }
 
-h3{
-    background-color: ;
+main h2{
+    background-image: linear-gradient( to right, var(--cor1), transparent);
+    font-size: 1.3em;
     font-family: var(--fonte-android);
-    color: ;
+    padding-left: 10px;
+    color: var(--cor4);
+    font-weight: normal;
 }
 
-
-section{
+aside{
     border-radius: 10px;
     background-color: var(--cor1) ;
+
 }
-section > h2{
+aside > h3{
     font-family: var(--fonte-padrao);
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 10px 10px 0px 0px;
     color: white;
-    background-color:var(--cor4) ;
-}
-
-article{
+    background-color: var(--cor5);
     padding-left: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-article > p{
-    font-family: var(--fonte-padrao);
-    text-align: justify;
+aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+aside > p {
     text-indent: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    line-height: 1.3em;
 }
 
 footer{
     background-color: var(--cor5);
     margin: auto;
     text-align: center;
-}
-
-footer > p{
+    margin-top: 15px;
     color: white;
     font-size: 0.8em;
 }
