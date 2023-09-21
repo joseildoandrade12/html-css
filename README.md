@@ -6,3 +6,6 @@ estou aprendendo a criar sites e agora estou aprendendo a gerenciar meus reposí
 <a href="https://joseildoandrade12.github.io/html-css/desafios/atvd010/"> executar o desafio 010
 
 <a href="https://joseildoandrade12.github.io/html-css/desafios/atvd010-2/"> executar o desafio 010.02
+
+<a href="https://joseildoandrade12.github.io/html-css/desafios/projeto-cordel/"> projeto cordel
+
