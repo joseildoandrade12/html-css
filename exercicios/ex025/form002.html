@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de formulário</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container{
+            border: 1px solid rgba(0, 0, 0, 0.185);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+            background-image:linear-gradient( to bottom, rgb(167, 165, 165), rgba(0, 0, 0, 0.205) );
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
-    <p>
-        <label for="iusu">Usuário:</label>
-        <input type="text" name="usu" id="iusu">
-    </p>
-    <p>
-        <label for="isen">Senha:</label>
-        <input type="password" name="sen" id="isen">
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
-    </form>
+    <div class="container">
+        <h1>Teste de formulário</h1>
+        <form action="cadastro.php" autocomplete="on" method="get">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="10" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+    </div>
 </body>
 </html>
