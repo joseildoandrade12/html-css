@@ -1,3 +1,21 @@
 @charset "UTF-8";
 
 /*configurações gerais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #233eff;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+}
